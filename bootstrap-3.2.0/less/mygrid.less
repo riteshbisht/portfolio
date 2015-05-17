@@ -1,0 +1,153 @@
+
+@divleftandrightpadding:20px;
+
+.mycontainer {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+     background:@brand-primary;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+ 
+      background:@brand-primary;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+    
+     background:@brand-primary;
+  }
+}
+
+.div1 {
+  .container-fixed();
+    
+     background:#41dab3;
+    .text-center();
+    color:white;
+      font-family:Arial, Helvetica, sans-serif;
+     padding-left:@divleftandrightpadding;
+     padding-right:@divleftandrightpadding;
+ 
+      &>.box{
+      background:#41aab3;
+      color:blue;
+      
+      }
+}
+
+.div0
+{
+  .div1();
+   margin-top:50px;
+   background:white;
+
+}
+.div2{
+	.container-fixed();
+.text-center();
+background:#fd8560;
+color:#A02C08;
+padding:10px;
+	
+}
+
+.div3{
+	.container-fixed();
+.text-center();
+background:#ffbb4e;
+color:#F30000;
+}
+.div4{
+    .container-fixed();
+.mycenter();
+background:#446aff;
+}
+
+///////////////////////
+.mynavbar {
+  
+  min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+
+  margin-top:-50px;
+position:fixed;
+z-index:1;
+width:100%;
+  border: 1px solid transparent;
+  // Prevent floats from breaking the navbar
+  &:extend(.clearfix all);
+  @media (min-width: @grid-float-breakpoint) {
+    border-radius: @navbar-border-radius;
+  }
+
+ 
+}
+
+.frontpageimages
+{
+width:300px;
+height:150px;
+
+
+}
+
+.quotesimage
+{
+	width:100px;
+	height:100px;
+.img-circle();
+padding:10px;
+}
+
+.mycenter()
+{
+	text-align:center;
+}
+
+
+.mybutton
+{
+background:white;
+	.btn();
+		.btn-primary();
+	margin:5px;
+
+}
+.box
+{
+  box-shadow:0px 4px 8px rgba(0, 1, 0, 1.0);
+  padding:20px;
+  margin-bottom:20px;
+  margin-top:10px;
+  display: block;
+}
+.leftarrow
+{
+  .glyphicon();
+  .glyphicon-arrow-left();
+  font-size:100px;
+}
+.rightarrow
+{
+  .glyphicon();
+  .glyphicon-arrow-right();
+  font-size:100px;
+
+}
+
+.sidebarleft,.sidebarright
+{
+ 
+  background:#31aab3;
+  opacity:0.5;
+  height:auto;
+  margin-top:50%;
+  cursor:pointer;
+
+&:hover
+{
+  opacity:1;
+}
+
+}
